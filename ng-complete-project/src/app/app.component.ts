@@ -7,10 +7,4 @@ import { headerItem } from './shared/header-item.enum';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  selectedComponent: headerItem = headerItem.NONE;
-  headerItem: typeof headerItem = headerItem;
-
-  onItemSelected(item: headerItem){
-    this.selectedComponent = item;
-  }
 }
