@@ -7,9 +7,10 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  defaultSubscription = 'advanced';
+  defaultSubscription = 'Advanced';
+  subscriptions = ['Basic', 'Advanced', 'Pro'];
 
   onSubmit(form: NgForm){
-    console.log(form);
+    console.log(form.value);
   }
 }
